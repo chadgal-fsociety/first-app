@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Add from'./Add';
+import Subtract from './subrate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  
+    <Add a={3} b={5} option={1} />
+    <Add a={3} b={5} option={2} />
+    <Add a={3} b={5} option={3} />
+    <Add a={3} b={5} option={4} />
+
+    <Subtract/>
+
   </React.StrictMode>
 );
 
